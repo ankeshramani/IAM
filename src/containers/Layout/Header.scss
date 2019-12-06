@@ -1,0 +1,43 @@
+@import '../../scss/variables';
+
+.header-custom {
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
+  height: 60px;
+  border-bottom: 2px solid $primary-color;
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  top: 0;
+  > div {
+    flex: 1;
+  }
+
+  .logo {
+    max-width: 320px;
+    background-color: $primary-color;
+    color: $color-white;
+    padding: 13px 18px 18px 18px;
+    padding-left: 40px;
+  }
+  .custom-title{
+    font-size: 25px;
+    padding: 10px 8px 8px 35px;
+    color: $color-white;
+    font-family: $font-family-bold;
+    background-color: $primary-color;
+  }
+  .app-title-icon{
+    img{
+      width: 30px;
+      margin-right: 10px;
+    }
+  }
+}
+.topbar__menu-wrap {
+  left: -20px;
+}
+.topbar__avatar:hover, .topbar__avatar:focus, .topbar__avatar:active, .topbar__avatar:focus:active {
+  background: transparent !important;
+}
